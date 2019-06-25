@@ -5,7 +5,7 @@ for this demo
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap');
 
 html { transition: font-size .5s ease; }
-body { font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 3rem 0;}
+body { font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 0;}
 
 .row > * {
   background: #cfdaf1  ;
@@ -15,6 +15,7 @@ body { font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 
 }
 
 header {
+  padding: 3rem 2rem 0;
   background: #0D4EDC;
   color: white;
 }
@@ -37,7 +38,7 @@ header hr {
   border-color: #fff !important;
 }
 
-header.row > * {
+header .row > * {
   padding: 0;
   background: none;
   outline: none;
