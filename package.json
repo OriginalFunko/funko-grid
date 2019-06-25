@@ -1,0 +1,19 @@
+{
+  "name": "simpl-grid",
+  "version": "1.0.3",
+  "description": "simple responsive flexbox grid",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --precision 3 --output-style compact grid.scss grid.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nihlton/simple-grid.git"
+  },
+  "author": "greg archer <nihlton@gmail.com> (https://gregtaff.com/)",
+  "license": "ISC",
+  "homepage": "https://github.com/nihlton/simple-grid",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

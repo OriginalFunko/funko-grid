@@ -1,0 +1,209 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+<div class='container'>
+
+  <header class='row large-gutter'>
+    <div class='small-12'>
+      <h1>simple responsive<br/> flexbox grid</h1>
+      <h2><a href='docs.html'>documentation</a></h2>
+      <h2><a href='https://github.com/nihlton/simple-grid'>source</a></h2>
+      <h2><a>demo</a></h2>
+    </div>
+    <hr />
+ 
+    <div class='small-12 medium-6 large-3'>
+      <h2>minimal syntax</h2>
+      <p>just add class name 'row' to a container, and let flex box handle it.  If you want precise control, use the familiar 12 column system.</p>
+    </div>
+
+    <div  class='small-12 medium-6 large-3'>
+      <h2>element light</h2>
+      <p>cells can be rows themselves, with cells of their own.  no unnecessary elements / nesting.</p>
+    </div>
+
+
+    <div class='small-12 medium-6 large-3'>
+      <h2>responsive</h2>
+      <p>break points for mobile, tablet and desktop. Add class name 'small-n', 'medium-n' or 'large-n'.</p>
+    </div>
+
+
+    <div class='small-12 medium-6 large-3'>
+      <h2>equal column heights</h2>
+      <p>
+        no javascript hackery, just good clean fun.
+      </p>
+    </div>
+
+
+  </header>
+  <hr/>
+
+  <h1>Gutters</h1>
+
+  <div class='row no-gutter'>
+    <div class='small-12 medium-6'><h2>no gutter</h2></div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+  </div>
+  <div class='row no-gutter'>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-12 medium-6'>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <div class='row small-gutter'>
+    <div class='small-12 medium-6'><h2>small gutter</h2></div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+  </div> 
+
+  <div class='row small-gutter'>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-12 medium-6'>&nbsp;</div>
+  </div>
+  <hr/>
+  
+  <div class='row'>
+    <div class='small-12 medium-6'><h2>medium gutter</h2></div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+  </div>
+
+  <div class='row'>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-12 medium-6'>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <div class='row large-gutter'>
+    <div class='small-12 medium-6'><h2>large gutter</h2></div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+  </div>
+  <div class='row large-gutter'>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-12 medium-6'>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <h1>Grid System</h1>
+
+  <div class='row '>
+    <div class='small-3 offset-small-3'></div>
+    <div class='small-3'>&nbsp;</div>
+    <div class='small-3'>&nbsp;</div>
+  </div>
+  <div class='row' >
+    <div class='small-3 offset-small-6'></div>
+    <div class='small-3'>&nbsp;</div>
+  </div>
+  <div class='row'>
+    <div class='small-3 offset-small-9'>&nbsp;</div>
+  </div>
+
+  <div class='row'>
+    <div class='small-4 medium-2'>&nbsp; </div>
+    <div class='small-4 medium-2'>&nbsp;</div>
+    <div class='small-4 medium-2'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+  </div>
+
+  <div class='row'>
+    <div class='medium-1 small-2'>&nbsp;</div>
+    <div class='medium-2 small-4'>&nbsp;</div>
+    <div class='medium-3 small-6'>&nbsp;</div>
+    <div class='medium-6 small-12'>&nbsp;</div>
+  </div>
+
+  <div class='row'>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+  </div>
+
+  <div class='row '>
+    <div class='small-12 medium-9 no-row-padding row '>
+      <div class='small-12 no-row-padding row '>
+        <div class='small-8 no-row-padding row '>
+          <div class='small-12 row'>
+            <div class='small-3'>&nbsp;</div>
+            <div class='small-3'>&nbsp;</div>
+            <div class='small-3'>&nbsp;</div>
+            <div class='small-3'>&nbsp;</div>
+          </div>
+          <div class='small-12 row'>
+            <div class='small-4'>&nbsp;</div>
+            <div class='small-4'>&nbsp;</div>
+            <div class='small-4'>&nbsp;</div>
+          </div>
+        </div>
+        <div class='small-4 row'>
+          <div class='small-12 medium-6'>&nbsp;</div>
+          <div class='small-12 medium-6'>&nbsp;</div>
+        </div>
+      </div>
+      <div class='small-8 row'>
+        <div class='small-6 '>&nbsp;</div>
+        <div class='small-6 '>&nbsp;</div>
+      </div>
+      <div class='small-4 row'>
+        <div class='small-12 medium-6 '>&nbsp;</div>
+        <div class='small-12 medium-6 '>&nbsp;</div>
+      </div>
+    </div>
+    <div class='small-12 medium-3 row'>
+      <div class='small-6 '>&nbsp;</div>
+      <div class='small-6 '>&nbsp;</div>
+    </div>
+  </div>
+  <hr/>
+
+  <h1>utilities</h1>
+  <div class='row'>
+    <div class='small-12'>
+      <h2>.hide-for-[breakpoint], .show-for-[breakpoint]</h2>
+    </div>
+    <div class='hide-for-small'>this is <strong>not</strong> visible on small</div>
+    <div class='hide-for-medium'>this is <strong>not</strong> visible on medium</div>
+    <div class='hide-for-large'>this is <strong>not</strong> visible on large</div>
+    <div class='show-for-small'>this is <strong>only</strong> visible on small</div>
+    <div class='show-for-medium'>this is <strong>only</strong> visible on medium</div>
+    <div class='show-for-large'>this is <strong>only</strong> visible on large</div>
+  </div>
+
+  <div class='row'>
+    <div class='small-12'>
+      <h2>.order-[breakpoint]-[1...12]</h2>
+    </div>
+    <div class='order-large-1 order-medium-2 order-small-3'>
+      <div class='demo-bold-large'>large: first</div>
+      <div class='demo-bold-medium'>medium: second</div>
+      <div class='demo-bold-small'>small: third</div>
+    </div>
+    <div class='order-large-2 order-medium-3 order-small-1'>
+      <div class='demo-bold-large'>large: second</div>
+      <div class='demo-bold-medium'>medium: third</div>
+      <div class='demo-bold-small'>small: first</div>
+    </div>
+    <div class='order-large-3 order-medium-1 order-small-2'>
+      <div class='demo-bold-large'>large: third</div>
+      <div class='demo-bold-medium'>medium: first</div>
+      <div class='demo-bold-small'>small: second</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

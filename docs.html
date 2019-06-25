@@ -1,0 +1,415 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+<div class='container'>
+  <header class='row large-gutter'>
+    <div class='small-12 medium-8'>
+      <h1>simple responsive<br/> flexbox grid</h1>
+
+      <h2><a >documentation</a></h2>
+      <h2><a href='https://github.com/nihlton/simple-grid'>source</a></h2>
+      <h2><a href='index.html'>demo</a></h2>
+    </div>
+    <div>
+      <h1>index</h1>
+      <nav>
+        <h2><a href='#Gutters'>Gutters</a></h2>
+        <h2><a href='#GridSystem'>Grid System</a></h2>
+        <h2><a href='#Utilities'>Utilities</a></h2>
+      </nav>
+    </div>
+  </header>
+  <hr/>
+
+  <a name='Gutters'></a>
+  <h1>Gutters</h1>
+  <p>gutters are applied to row elements and specify how much space is placed between cells</p>
+
+  <h2>no gutter</h2>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row <strong>no-gutter</strong>'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row no-gutter'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <h2>small gutter</h2>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row <strong>small-gutter</strong>'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row small-gutter'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <hr/>
+  
+  <h2>medium gutter</h2>
+  <p>medium is the default.  no class is required.</p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <h2>large gutter</h2>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row <strong>large-gutter</strong>'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row large-gutter'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <a name='GridSystem'></a>
+  <h1>Grid System</h1>
+  <h2>basics</h2>
+  <p>
+    If you just want even width columns, flex box will handle most of the drudgery for you.
+    just add '<strong>row</strong>' to a containing element's class list and you're done.
+  </p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='<strong>row</strong>'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+&lt;div class='row'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+&lt;div class='row'>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <div class='row'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <div class='row'>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <h2>controlled grid</h2>
+  <p>
+    to specify the width of a given cell, specify the width in number of columns (out of 12) using the class name '<strong>small-x</strong>', where x is the number of columns.
+  </p>
+  <p>
+    HINT: When you specify the column width, you don't need to close the row tag and open another. the system will wrap the cells in increments of 12.
+  </p>
+  <p>
+    HINT: You can mix controlled and un-controlled cells within a row.
+  </p>
+  <p>
+    <em>
+      Why '<strong>small</strong>'? - small is the default class for column widths for mobile, which can then be overridden with specified widths for tablet and desktop.
+      We'll cover this in the next section.
+    </em>
+  </p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='<strong>small-6</strong>'>&lt;/div>
+  &lt;div class='small-2'>&lt;/div>
+  &lt;div class='small-2'>&lt;/div>
+  &lt;div class='small-2'>&lt;/div>
+  &lt;div class='small-8'>&lt;/div>
+  &lt;div class='small-4'>&lt;/div>
+&lt;/div>
+&lt;div class='row'>
+  &lt;div class='<strong>small-6</strong>'>&lt;/div>
+  &lt;div>&lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row'>
+    <div class='small-6'>&nbsp;</div>
+    <div class='small-2'>&nbsp;</div>
+    <div class='small-2'>&nbsp;</div>
+    <div class='small-2'>&nbsp;</div>
+    <div class='small-8'>&nbsp;</div>
+    <div class='small-4'>&nbsp;</div>
+  </div>
+  <div class='row'>
+    <div class='small-6'>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <h2>responsive grid</h2>
+  <p>
+    this system provides three breakpoints - small, medium, and large.  roughly: mobile, tablet and desktop.
+    use the classes '<strong>small-x</strong>', '<strong>medium-x</strong>' and '<strong>large-x</strong>' to specify the column widths of an element for each breakpoint.
+  </p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='<strong>small-12 medium-6 large-3</strong>'>&lt;/div>
+  &lt;div class='small-12 medium-6 large-3'>&lt;/div>
+  &lt;div class='small-12 medium-6 large-3'>&lt;/div>
+  &lt;div class='small-12 medium-6 large-3'>&lt;/div>
+  &lt;div class='small-2 medium-1'>&lt;/div>
+  &lt;div class='small-4 medium-2'>&lt;/div>
+  &lt;div class='small-6 medium-3'>&lt;/div>
+  &lt;div class='small-6 medium-3'>&lt;/div>
+  &lt;div class='small-4 medium-2'>&lt;/div>
+  &lt;div class='small-2 medium-1'>&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+
+  <div class='row'>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-12 medium-6 large-3'>&nbsp;</div>
+    <div class='small-2 medium-1'>&nbsp;</div>
+    <div class='small-4 medium-2'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-6 medium-3'>&nbsp;</div>
+    <div class='small-4 medium-2'>&nbsp;</div>
+    <div class='small-2 medium-1'>&nbsp;</div>
+  </div>
+  <hr/>
+
+  <h2>offsets</h2>
+  <p>
+    to specify the left offset of a given cell, use '<strong>offset-[screen size]-x</strong>', where x is the number of columns 0-12.
+  </p>
+  <p>
+    HINT: you might need '<strong>offset-medium-0</strong>' or '<strong>offset-large-0</strong>' to reset a cells offset when using '<strong>offset-small-x</strong>'
+  </p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row '>
+  &lt;div class='small-4 <strong>offset-small-8</strong>'>offset 8&lt;/div>
+  &lt;div class='small-8 offset-small-4'>offset 4&lt;/div>
+  &lt;div class='small-12 '>offset 0&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row '>
+    <div class='small-4 offset-small-8'>offset 8</div>
+    <div class='small-8 offset-small-4'>offset 4</div>
+    <div class='small-12 '>offset 0</div>
+  </div>
+  <hr/>
+
+  <h2>nesting</h2>
+  <p>
+    this is cake. each cell can in turn also be a row.  just add '<strong>row</strong>' and you're done.  Within a cell, the 12 column system resets.
+  </p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='small-12 medium-6 <strong>row</strong>'>
+    &lt;div class='small-6'>&lt;/div>
+    &lt;div >&lt;/div>
+    &lt;div >&lt;/div>
+  &lt;/div>
+  &lt;div class='small-12 medium-6 row'>
+    &lt;div class='small-8 row'>
+      &lt;div>&lt;/div>
+      &lt;div>&lt;/div>
+    &lt;/div>
+    &lt;div class='small-4 row'>
+      &lt;div>&lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+  </div>
+
+  <div class='row'>
+    <div class='small-12 medium-6 row'>
+      <div class='small-6'>&nbsp;</div>
+      <div >&nbsp;</div>
+      <div >&nbsp;</div>
+    </div>
+    <div class='small-12 medium-6 row'>
+      <div class='small-8 row'>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
+      <div class='small-4 row'>
+        <div>&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+
+  <h2>row spanning</h2>
+  <p>
+    this is a tiny bit tricky.  what we're actually doing is <em>visually</em> promoting child cells to sibling cells.
+    To accomplish this, we remove the padding of the nested row which contains the promoted cells by adding the class '<strong>no-row-padding</strong>'.
+  </p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='small-4 row'>spans 3 rows&lt;/div>
+  &lt;div class='small-8 row <strong>no-row-padding</strong>'>
+    &lt;div class='small-12'>&lt;/div>
+    &lt;div class='small-12'>&lt;/div>
+    &lt;div class='small-12'>&lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+  </div>
+
+  <div class='row'>
+    <div class='small-4 row'>spans 3 rows</div>
+    <div class='small-8 row no-row-padding'>
+      <div class='small-12'>&nbsp;</div>
+      <div class='small-12'>&nbsp;</div>
+      <div class='small-12'>&nbsp;</div>
+    </div>
+  </div>
+  <hr/>
+
+  <a name='Utilities'></a>
+  <h1>Utilities</h1>
+  <h2>no-cell-padding</h2>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='<strong>no-cell-padding</strong>'>no cell padding&lt;/div>
+  &lt;div class='<strong>no-cell-padding</strong>'>no cell padding&lt;/div>
+  &lt;div class='<strong>no-cell-padding</strong>'>no cell padding&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row'>
+    <div class='no-cell-padding'>no cell padding</div>
+    <div class='no-cell-padding'>no cell padding</div>
+    <div class='no-cell-padding'>no cell padding</div>
+  </div>
+  <hr/>
+
+  <h2>hide-for-x, show-for-x</h2>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='<strong>hide-for-small</strong>'>this is &lt;strong>not&lt;/strong> visible on small&lt;/div>
+  &lt;div class='hide-for-medium'>this is &lt;strong>not&lt;/strong> visible on medium&lt;/div>
+  &lt;div class='hide-for-large'>this is &lt;strong>not&lt;/strong> visible on large&lt;/div>
+  &lt;div class='<strong>show-for-small</strong>'>this is &lt;strong>only&lt;/strong> visible on small&lt;/div>
+  &lt;div class='show-for-medium'>this is &lt;strong>only&lt;/strong> visible on medium&lt;/div>
+  &lt;div class='show-for-large'>this is &lt;strong>only&lt;/strong> visible on large&lt;/div>
+&lt;/div>
+</pre>
+  </div>
+  <div class='row'>
+    <div class='hide-for-small'>this is <strong>not</strong> visible on small</div>
+    <div class='hide-for-medium'>this is <strong>not</strong> visible on medium</div>
+    <div class='hide-for-large'>this is <strong>not</strong> visible on large</div>
+    <div class='show-for-small'>this is <strong>only</strong> visible on small</div>
+    <div class='show-for-medium'>this is <strong>only</strong> visible on medium</div>
+    <div class='show-for-large'>this is <strong>only</strong> visible on large</div>
+  </div>
+  <hr/>
+
+  <h2>order-[screen size]-[position]</h2>
+  <p>flex box allows you to re-order elements as they're displayed without altering their order within the markup.</p>
+  <p>this system provides some convenience methods changing the order of items for a given screen size</p>
+  <p>use the class name '<strong>order-[screen size]-[position]</strong>' where 'position' is a number 1 through 12.</p>
+  <div class='row'>
+<pre class='small-12'>
+&lt;div class='row'>
+  &lt;div class='<strong>order-large-1 order-medium-2 order-small-3</strong>'>
+    large: first&lt;br/>
+    medium: second&lt;br/>
+    small: third&lt;br/>
+  &lt;/div>
+  &lt;div class='order-large-2 order-medium-3 order-small-1'>
+    large: second&lt;br/>
+    medium: third&lt;br/>
+    small: first&lt;br/>
+  &lt;/div>
+  &lt;div class='order-large-3 order-medium-1 order-small-2'>
+    large: third&lt;br/>
+    medium: first&lt;br/>
+    small: second&lt;br/>
+  &lt;/div>
+&lt;/div>
+</pre>
+  </div>
+
+  <div class='row'>
+    <div class='order-large-1 order-medium-2 order-small-3'>
+      <strong>A</strong><br/>
+      large: first<br/>
+      medium: second<br/>
+      small: third<br/>
+    </div>
+    <div class='order-large-2 order-medium-3 order-small-1'>
+      <strong>B</strong><br/>
+      large: second<br/>
+      medium: third<br/>
+      small: first<br/>
+    </div>
+    <div class='order-large-3 order-medium-1 order-small-2'>
+      <strong>C</strong><br/>
+      large: third<br/>
+      medium: first<br/>
+      small: second<br/>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>

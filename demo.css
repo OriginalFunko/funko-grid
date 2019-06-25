@@ -1,0 +1,98 @@
+/*********************
+for this demo
+*********************/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html { transition: font-size .5s ease; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 3rem 0;}
+
+.row > * {
+  background: rgba(0,0,0,.05);
+  outline: 1px dashed rgba(0,0,0, .2);
+  outline-offset: -1px;
+}
+
+header.row > * {
+  padding: 0;
+  background: none;
+  outline: none;
+}
+
+.row.no-gutter > * {
+
+}
+
+.no-row-padding {
+  background: none;
+  outline: none;
+}
+
+h1, h2, h3 {
+  margin: 0 0 .5em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+p { margin: 0 0 1em; line-height: 1.6 }
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid;
+  border-color: #aaa !important;
+  outline: none  !important;
+  margin: 3rem 0;
+}
+
+pre {
+  font-family: 'Roboto Mono', monospace;
+  outline: 5px solid rgba(0,0,0,.06);
+  background: white !important;
+  overflow-x: auto;
+  outline-offset: -5px;
+}
+
+a {color: #174c70;  }
+a[href] {color: #0095FF; text-decoration: none; }
+strong { font-weight: normal; color: #FF00A2; text-shadow: .5px 0 #FF00A2; }
+dt, dd {
+  display: inline-block;
+}
+dt { width: 20%; color: #FF00A2 }
+dd { width: 75%; margin: 0; }
+
+@media (min-width: 0em) {
+  .demo-hilite-medium,
+  .demo-hilite-large { display: none; }
+  .demo-hilite-small { display: inline; }
+  .demo-bold-small { color: #FF00A2; }
+  .demo-bold-medium { color: inherit; }
+  .demo-bold-large { color: inherit; }
+}
+@media (min-width: 40em) {
+  .demo-hilite-small,
+  .demo-hilite-large { display: none; }
+  .demo-hilite-medium { display: inline; }
+  .demo-bold-small { color: inherit; }
+  .demo-bold-medium { color: #FF00A2; }
+  .demo-bold-large { color: inherit; }
+}
+@media (min-width: 64em) {
+  .demo-hilite-small,
+  .demo-hilite-medium { display: none; }
+  .demo-hilite-large { display: inline; }
+  .demo-bold-small { color: inherit; }
+  .demo-bold-medium { color: inherit; }
+  .demo-bold-large { color: #FF00A2; }
+}
