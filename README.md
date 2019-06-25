@@ -2,9 +2,9 @@
 
 simple responsive flexbox grid for fun and for profit, in less than 200 lines.
 
-DEMO: https://github.com/OriginalFunko/funko-grid
+DEMO: https://originalfunko.github.io/funko-grid/
 
-DOCS: https://github.com/OriginalFunko/funko-grid
+DOCS: https://originalfunko.github.io/funko-grid/docs.html
 
 # setup
 

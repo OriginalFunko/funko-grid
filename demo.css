@@ -2,15 +2,39 @@
 for this demo
 *********************/
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap');
 
 html { transition: font-size .5s ease; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 3rem 0;}
+body { font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; padding: 3rem 0;}
 
 .row > * {
-  background: rgba(0,0,0,.05);
-  outline: 1px dashed rgba(0,0,0, .2);
+  background: #cfdaf1  ;
+  outline: 2px solid #fff;
   outline-offset: -1px;
+  min-height: 4rem;
+}
+
+header {
+  background: #0D4EDC;
+  color: white;
+}
+
+header a {color: #a1aabf; text-decoration: underline; }
+header a[href] {color: #FFF; text-decoration: none; }
+header h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-shadow: -0.1em 0.1em 0 #0D4EDC, 0rem 0.1em 0 #0D4EDC, -0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+}
+
+header h1 em {
+  font-style: normal;
+  font-size: 1.87em;
+  line-height: 1;
+}
+
+header hr {
+  border-color: #fff !important;
 }
 
 header.row > * {
@@ -35,7 +59,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
+  font-weight: 800;
 }
 
 h2 {
@@ -63,8 +88,8 @@ pre {
   outline-offset: -5px;
 }
 
-a {color: #174c70;  }
-a[href] {color: #0095FF; text-decoration: none; }
+a {color: #52555c; text-decoration: underline; }
+a[href] {color: #0D4EDC; text-decoration: none; }
 strong { font-weight: normal; color: #FF00A2; text-shadow: .5px 0 #FF00A2; }
 dt, dd {
   display: inline-block;
