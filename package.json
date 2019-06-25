@@ -1,8 +1,11 @@
 {
-  "name": "funko-grid",
+  "name": "@originalfunko/grid",
   "version": "1.0.0",
   "description": "simple responsive flexbox grid",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "node-sass --precision 3 --output-style compact grid.scss grid.css"
   },
