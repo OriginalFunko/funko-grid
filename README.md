@@ -10,8 +10,8 @@ DOCS: https://originalfunko.github.io/funko-grid/docs.html
 
 In the console
 
-``yarn add funko-grid``
+``yarn add @originalfunko/grid``
 
-Then, in your project import 'funko-grid/grid.css'.
+Then, in your project import ' @originalfunko/grid/grid.css'.
 
-ex: ``@import '~funko-grid/grid.css';``
+ex: ``@import '~ @originalfunko/grid/grid.css';``
