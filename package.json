@@ -1,6 +1,6 @@
 {
-  "name": "simpl-grid",
-  "version": "1.0.3",
+  "name": "funko-grid",
+  "version": "1.0.0",
   "description": "simple responsive flexbox grid",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nihlton/simple-grid.git"
+    "url": "git://github.com/OriginalFunko/funko-grid.git"
   },
-  "author": "greg archer <nihlton@gmail.com> (https://gregtaff.com/)",
-  "license": "ISC",
-  "homepage": "https://github.com/nihlton/simple-grid",
+  "author": "greg archer <garcher@funko.com> (https://www.funko.com/)",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/OriginalFunko/funko-grid",
   "devDependencies": {
     "node-sass": "^4.12.0"
   }
