@@ -14,4 +14,4 @@ In the console
 
 Then, in your project import ' @originalfunko/grid/grid.css'.
 
-ex: ``@import '~ @originalfunko/grid/grid.css';``
+ex: ``@import '~@originalfunko/grid/grid.css';``
