@@ -1,3 +1,4 @@
+![Funko Grid](https://raw.githubusercontent.com/OriginalFunko/funko-grid/master/funko-grid.png)
 # Funko Grid
 
 simple responsive flexbox grid for fun and for profit, in less than 200 lines.
