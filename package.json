@@ -1,8 +1,9 @@
 {
   "name": "@originalfunko/grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple responsive flexbox grid",
-  "main": "index.js",
+  "main": "grid.css",
+  "style": "grid.css",
   "publishConfig": {
     "access": "public"
   },
